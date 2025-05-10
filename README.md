@@ -3,8 +3,33 @@ A DLL sideloading utility.
 
 DynamicFinder will search every running process for DLL sideloading opportunities.
 
+## Installation
+
+1. Ensure you have [.NET SDK](https://dotnet.microsoft.com/download) installed on your system.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/analyticsearch/DynamicFinder.git
+   ```
+3. Navigate to the project directory:
+   ```bash
+   cd DynamicFinder
+   ```
+
+## Usage
+
+Build and run the project using the following commands:
+
+```bash
+# Build the project
+dotnet build
+
+# Run the project
+dotnet run [User|Group]
 ```
-Usage: DynamicFinder [User|Group]
+
+Example outputs:
+
+```plaintext
 PS C:\DynamicFinder> dotnet run Administrators
 [*] Running...
 [*] There are 96 directories from running applications we can write to.
